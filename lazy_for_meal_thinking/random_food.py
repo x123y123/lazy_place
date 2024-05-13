@@ -7,7 +7,7 @@ import random
 google_map_api_key = 'insert your google map key'
 
 def find_restaurants(location):
-    gmaps = googlemaps.Client(key=google_map_api_kdy)
+    gmaps = googlemaps.Client(key=google_map_api_key)
     
     p = gmaps.geocode(location)
     lat=str(p[0]['geometry']['location']['lat'])
